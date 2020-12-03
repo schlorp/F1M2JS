@@ -33,7 +33,15 @@
     }
     function deel(getal1, getal2){
         let antwoord = getal1 / getal2;
-        console.log("delen " + antwoord);
+        console.log("delen " + antwoord)
         delen.innerHTML = antwoord;
+        if (!antwoord) {
+            delen.innerHTML = "kan niet delen door nul."
+        }
+        if (getal2 == 0){
+            delen.innerHTML = "kan niet delen door nul"
+        }
+
     }
+    
     
